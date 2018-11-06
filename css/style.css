@@ -1,0 +1,108 @@
+body {
+
+	height: 100vh;
+
+}
+
+html,body,canvas{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.hamburger-container{
+  
+  z-index: 20; /*give this a z index so that it remains on top and will be clickable above the overlay  */
+  position: relative;
+  padding-left: 6px;
+  padding-top: 5px;
+}
+
+#top_bun, #meat, #bottom_bun{
+  width: 35px;
+  height: 5px;
+  background-color: #FFF;
+  margin:6px 0;
+  position: relative;
+  margin-right: 0vw;
+  color:white;
+}
+
+.hamburger-container div{
+  transition: 0.4s;
+}
+
+h1 {
+	font-family: Baskerville;
+}
+
+
+
+.italic {
+	font-style: italic;
+}
+
+
+
+.stripe {
+
+	height: 10vh;
+	margin-bottom: 10vh;
+	background-color: #ff3e3e;
+	transition: background-color: 5s;	
+
+}
+
+.explainer {
+	font-family: Baskerville;
+	padding: 5px 20px 0 20px;
+	display: none;
+	opacity: 0;
+	transition: opacity .5s;
+
+
+}
+
+p.explainer {
+	margin-bottom: 40px;
+}
+
+.explainerOpen{
+	display: block;
+	opacity: 1;
+	transition: opacity .5s;
+
+}
+
+.mutedStripe {
+	background-color: grey;
+	transition: background-color: 5s;	
+}
+
+.blueBox {
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	top:0px;
+	left:0px;
+	background-color: #5166ff;
+	color:white;
+	font-family: Cousine;
+	transition: all .5s;
+}
+
+.blueBoxOpen {
+	position: fixed;
+	height: 320px;
+	width: 500px;
+	transition: all .5s;
+
+	
+}
+
+.blueBoxMuted {
+	background-color: #545454;
+	color: #545454;
+	transition: background-color: 5s;	
+}
+
